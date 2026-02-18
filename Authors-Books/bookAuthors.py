@@ -100,3 +100,18 @@ while choice != 6:
             print("\n".join(books))
         else:
             print("No books found by that author.")
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# OPTION 5 - OLDEST BOOK(S)
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    elif choice == 5:
+        oldest_year = min(years)
+        print("Oldest book(s):")
+        for i in range(len(years)):
+            if years[i] == oldest_year:
+                print(f"{titles[i]} ({years[i]}) by {authors[i]}")
+
+    else:
+        print("Invalid choice.")
+
+    choice = int(input(MENU))
