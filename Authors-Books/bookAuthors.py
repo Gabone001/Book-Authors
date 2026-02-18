@@ -43,7 +43,6 @@ while choice != 6:
 # >>>>>>>>>>>>>>>>>>
 
     if choice == 1:
-        title = input("Enter title to add: ").strip()
         author = input("Author: ").strip()
         title = input("Title: ").strip()
         year = int(input("Year: ").strip())
