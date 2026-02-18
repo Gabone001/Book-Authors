@@ -71,3 +71,19 @@ while choice != 6:
             del years[index]
             del sales[index]
             print("Book deleted successfully.")
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>
+# OPTION 3 - UPDATE SALES
+# >>>>>>>>>>>>>>>>>>>>>>>>>>
+    elif choice == 3:
+        title = input("Enter title to update: ").strip()
+
+        if title not in titles:
+            print("Book not found.")
+        else:
+            index = titles.index(title)
+            print(f"{titles[index]} ({years[index]}) by {authors[index]} has sales of {sales[index]:,}.")
+            new_sales = int(input("New Sales >>> ").strip())
+            sales[index] = new_sales
+            print("Record updated.")
+            print(f"{titles[index]} ({years[index]}) by {authors[index]} now has sales of {sales[index]:,}.")
