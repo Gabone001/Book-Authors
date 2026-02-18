@@ -87,3 +87,16 @@ while choice != 6:
             sales[index] = new_sales
             print("Record updated.")
             print(f"{titles[index]} ({years[index]}) by {authors[index]} now has sales of {sales[index]:,}.")
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# OPTION 4 - BOOKS BY AUTHOR
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    elif choice == 4:
+        name = input("Enter author name: ").strip()
+        books = [titles[i] for i in range(len(authors)) if authors[i] == name]
+
+        if books:
+            print("Books by", name)
+            print("\n".join(books))
+        else:
+            print("No books found by that author.")
