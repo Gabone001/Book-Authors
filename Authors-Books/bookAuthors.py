@@ -41,6 +41,7 @@ while choice != 6:
 # >>>>>>>>>>>>>>>>>>
 # OPTION 1 - ADD
 # >>>>>>>>>>>>>>>>>>
+
     if choice == 1:
         author = input("Author: ").strip()
         title = input("Title: ").strip()
@@ -59,6 +60,7 @@ while choice != 6:
 # >>>>>>>>>>>>>>>>>>>>
 # OPTION 2 - DELETE
 # >>>>>>>>>>>>>>>>>>>>
+
     elif choice == 2:
         title = input("Enter title to delete: ").strip()
 
@@ -75,6 +77,7 @@ while choice != 6:
 # >>>>>>>>>>>>>>>>>>>>>>>>>>
 # OPTION 3 - UPDATE SALES
 # >>>>>>>>>>>>>>>>>>>>>>>>>>
+
     elif choice == 3:
         title = input("Enter title to update: ").strip()
 
@@ -91,6 +94,7 @@ while choice != 6:
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # OPTION 4 - BOOKS BY AUTHOR
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
     elif choice == 4:
         name = input("Enter author name: ").strip()
         books = [titles[i] for i in range(len(authors)) if authors[i] == name]
@@ -104,6 +108,7 @@ while choice != 6:
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # OPTION 5 - OLDEST BOOK(S)
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
     elif choice == 5:
         oldest_year = min(years)
         print("Oldest book(s):")
