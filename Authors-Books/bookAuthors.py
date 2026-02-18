@@ -35,3 +35,22 @@ MENU = """
 Enter choice >>> """
 
 choice = int(input(MENU))
+
+while choice != 6:
+# -----------------------------
+# OPTION 1 - ADD
+# -----------------------------
+    if choice == 1:
+        author = input("Author: ").strip()
+        title = input("Title: ").strip()
+        year = int(input("Year: ").strip())
+        sale = int(input("Sales: ").strip())
+
+        if title in titles:
+            print("That book is already in the database.")
+        else:
+            authors.append(author)
+            titles.append(title)
+            years.append(year)
+            sales.append(sale)
+            print("Book added successfully.")
