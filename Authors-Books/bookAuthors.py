@@ -115,3 +115,13 @@ while choice != 6:
         print("Invalid choice.")
 
     choice = int(input(MENU))
+
+# >>>>>>>>>>>>>>>>>>>>>>>
+# SAVE BACK TO FILE
+# >>>>>>>>>>>>>>>>>>>>>>>
+
+with open("books.txt", "w") as file:
+    for author, title, year, sale in zip(authors, titles, years, sales):
+        file.write(f"{author},{title},{year},{sale}\n")
+
+print("Changes saved. Thank you.")
