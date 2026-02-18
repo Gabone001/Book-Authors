@@ -37,9 +37,10 @@ Enter choice >>> """
 choice = int(input(MENU))
 
 while choice != 6:
-# -----------------------------
+
+# >>>>>>>>>>>>>>>>>>
 # OPTION 1 - ADD
-# -----------------------------
+# >>>>>>>>>>>>>>>>>>
     if choice == 1:
         author = input("Author: ").strip()
         title = input("Title: ").strip()
@@ -54,3 +55,19 @@ while choice != 6:
             years.append(year)
             sales.append(sale)
             print("Book added successfully.")
+
+# >>>>>>>>>>>>>>>>>>>>
+# OPTION 2 - DELETE
+# >>>>>>>>>>>>>>>>>>>>
+    elif choice == 2:
+        title = input("Enter title to delete: ").strip()
+
+        if title not in titles:
+            print("Book not found.")
+        else:
+            index = titles.index(title)
+            del authors[index]
+            del titles[index]
+            del years[index]
+            del sales[index]
+            print("Book deleted successfully.")
