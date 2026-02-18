@@ -57,9 +57,9 @@ while choice != 6:
             sales.append(sale)
             print("Book added successfully.")
 
-# >>>>>>>>>>>>>>>>>>>>
+# >>>>>>>>>>>>>>>>>>>>>
 # OPTION 2 - DELETE
-# >>>>>>>>>>>>>>>>>>>>
+# >>>>>>>>>>>>>>>>>>>>>
 
     elif choice == 2:
         title = input("Enter title to delete: ").strip()
