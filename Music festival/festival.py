@@ -49,15 +49,20 @@ print("-" * 65)
 print(f"{'Performer Name':35} {'Duration':10} {'Performance Type':15}")
 print("-" * 65)
 
-# for i in range(len(names)):
-#     # Determine performance type directly (no function)
-#     if durations[i] <= 30:
-#         performance_type = "Opening Act"
-#     elif durations[i] <= 60:
-#         performance_type = "Main Set"
-#     else:
-#         performance_type = "Headliner"
-#
-#     print(f"{names[i]:35} {durations[i]:10} {performance_type:15}")
-#
-# print("-" * 65)
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Performance type rules
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+for i in range(len(names)):
+
+     # Determine performance type directly
+     if durations[i] <= 30:
+         performance_type = "Opening Act"
+     elif durations[i] <= 60:
+         performance_type = "Main Set"
+     else:
+         performance_type = "Headliner"
+
+     print(f"{names[i]:35} {durations[i]:10} {performance_type:15}")
+
+print("-" * 65)
