@@ -23,20 +23,23 @@ except FileNotFoundError:
     print("Error: performers.txt file not found.")
     exit()
 
-# # Allow user to update a performer's duration
-# search_name = input("Enter performer name to update: ")
-#
-# if search_name in names:
-#     index = names.index(search_name)
-#     try:
-#         new_duration = int(input("Enter new performance duration (minutes): "))
-#         durations[index] = new_duration
-#         print("Performance duration updated successfully.")
-#     except ValueError:
-#         print("Invalid duration entered. No changes made.")
-# else:
-#     print("Performer not found.")
-#
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Allow user to update a performer's duration
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+search_name = input("Enter performer name to update: ")
+
+if search_name in names:
+     index = names.index(search_name)
+     try:
+         new_duration = int(input("Enter new performance duration (minutes): "))
+         durations[index] = new_duration
+         print("Performance duration updated successfully.")
+     except ValueError:
+         print("Invalid duration entered. No changes made.")
+else:
+     print("Performer not found.")
+
 # # Display formatted summary table
 # print("\nFestival Performance Summary")
 # print("-" * 65)
