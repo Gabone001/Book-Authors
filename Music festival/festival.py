@@ -40,12 +40,15 @@ if search_name in names:
 else:
      print("Performer not found.")
 
-# # Display formatted summary table
-# print("\nFestival Performance Summary")
-# print("-" * 65)
-# print(f"{'Performer Name':35} {'Duration':10} {'Performance Type':15}")
-# print("-" * 65)
-#
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Display formatted summary table
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+print("\nFestival Performance Summary")
+print("-" * 65)
+print(f"{'Performer Name':35} {'Duration':10} {'Performance Type':15}")
+print("-" * 65)
+
 # for i in range(len(names)):
 #     # Determine performance type directly (no function)
 #     if durations[i] <= 30:
